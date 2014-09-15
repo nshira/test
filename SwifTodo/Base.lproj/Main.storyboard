@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SwifToDo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SwifToDo" id="vXZ-lx-hvc" customClass="ViewController" customModule="SwifTodo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="G8R-3E-F7o"/>
+                        <viewControllerLayoutGuide type="bottom" id="9X3-zn-H6a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoe-pI-i5v">
+                                <rect key="frame" x="164" y="50" width="272" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUh-BA-Hm1">
+                                <rect key="frame" x="223" y="100" width="155" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLe-J8-7Er">
+                                <rect key="frame" x="289" y="196" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PushCountButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A0c-gs-no3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTx-57-ap9">
+                                <rect key="frame" x="283" y="267" width="34" height="30"/>
+                                <state key="normal" title="reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PushResetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="juD-zQ-Ngv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="qoe-pI-i5v" secondAttribute="centerY" constant="251" id="EQi-VN-MSD"/>
+                            <constraint firstAttribute="centerX" secondItem="rLe-J8-7Er" secondAttribute="centerX" constant="110" id="EpR-70-CgG"/>
+                            <constraint firstAttribute="centerX" secondItem="MUh-BA-Hm1" secondAttribute="centerX" constant="109.5" id="OcJ-Op-WBh"/>
+                            <constraint firstAttribute="centerX" secondItem="qoe-pI-i5v" secondAttribute="centerX" constant="110" id="VaH-tq-P5N"/>
+                            <constraint firstAttribute="centerX" secondItem="qoe-pI-i5v" secondAttribute="centerX" constant="110" id="fbw-VQ-c1D"/>
+                            <constraint firstAttribute="centerX" secondItem="bTx-57-ap9" secondAttribute="centerX" constant="110" id="uL7-Fl-G9X"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="SwifToDo" id="RaT-ZF-unD"/>
+                    <connections>
+                        <outlet property="counter" destination="MUh-BA-Hm1" id="I6e-wK-mxf"/>
+                        <outlet property="textLabel" destination="qoe-pI-i5v" id="agP-BO-ZXW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="787" y="-647"/>
         </scene>
     </scenes>
 </document>

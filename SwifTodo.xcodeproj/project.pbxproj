@@ -12,7 +12,6 @@
 		4660603B19C6631200F15904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660603A19C6631200F15904 /* ViewController.swift */; };
 		4660603E19C6631200F15904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4660603C19C6631200F15904 /* Main.storyboard */; };
 		4660604019C6631200F15904 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4660603F19C6631200F15904 /* Images.xcassets */; };
-		4660604319C6631200F15904 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4660604119C6631200F15904 /* LaunchScreen.xib */; };
 		4660604F19C6631200F15904 /* SwifTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660604E19C6631200F15904 /* SwifTodoTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31FDDB2310E64571AD8D84E3 /* Pods-SwifTodo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifTodo.xcconfig"; path = "Pods/Pods-SwifTodo.xcconfig"; sourceTree = "<group>"; };
 		4660603019C6631200F15904 /* SwifTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4660603419C6631200F15904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4660603519C6631200F15904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,10 +34,10 @@
 		4660603A19C6631200F15904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4660603D19C6631200F15904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4660603F19C6631200F15904 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4660604219C6631200F15904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4660604819C6631200F15904 /* SwifTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4660604D19C6631200F15904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4660604E19C6631200F15904 /* SwifTodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifTodoTests.swift; sourceTree = "<group>"; };
+		B899D763A3314884A2D3A1E6 /* libPods-SwifTodo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwifTodo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +64,8 @@
 				4660603219C6631200F15904 /* SwifTodo */,
 				4660604B19C6631200F15904 /* SwifTodoTests */,
 				4660603119C6631200F15904 /* Products */,
+				31FDDB2310E64571AD8D84E3 /* Pods-SwifTodo.xcconfig */,
+				B5B37CDB814042188FED00B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +85,6 @@
 				4660603A19C6631200F15904 /* ViewController.swift */,
 				4660603C19C6631200F15904 /* Main.storyboard */,
 				4660603F19C6631200F15904 /* Images.xcassets */,
-				4660604119C6631200F15904 /* LaunchScreen.xib */,
 				4660603719C6631200F15904 /* SwifTodo.xcdatamodeld */,
 				4660603319C6631200F15904 /* Supporting Files */,
 			);
@@ -115,6 +116,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B5B37CDB814042188FED00B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B899D763A3314884A2D3A1E6 /* libPods-SwifTodo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4660605219C6631200F15904 /* Build configuration list for PBXNativeTarget "SwifTodo" */;
 			buildPhases = (
+				C1B1CE7F300B4C2FAE62C05A /* Check Pods Manifest.lock */,
 				4660602C19C6631200F15904 /* Sources */,
 				4660602D19C6631200F15904 /* Frameworks */,
 				4660602E19C6631200F15904 /* Resources */,
+				106AE31082474877ACAB24FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,7 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4660603E19C6631200F15904 /* Main.storyboard in Resources */,
-				4660604319C6631200F15904 /* LaunchScreen.xib in Resources */,
 				4660604019C6631200F15904 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +219,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		106AE31082474877ACAB24FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SwifTodo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B1CE7F300B4C2FAE62C05A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4660602C19C6631200F15904 /* Sources */ = {
@@ -246,14 +289,6 @@
 				4660603D19C6631200F15904 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4660604119C6631200F15904 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4660604219C6631200F15904 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,6 +373,7 @@
 		};
 		4660605319C6631200F15904 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FDDB2310E64571AD8D84E3 /* Pods-SwifTodo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwifTodo/Info.plist;
@@ -348,6 +384,7 @@
 		};
 		4660605419C6631200F15904 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FDDB2310E64571AD8D84E3 /* Pods-SwifTodo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwifTodo/Info.plist;
@@ -409,6 +446,7 @@
 				4660605419C6631200F15904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4660605519C6631200F15904 /* Build configuration list for PBXNativeTarget "SwifTodoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +455,7 @@
 				4660605719C6631200F15904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
