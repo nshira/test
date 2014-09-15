@@ -1,0 +1,7 @@
+/pod
+/Podfile
+/Podfile.lock
+/Pods/*
+/SwifTodo.xcodeproj/project.xcworkspace/xcshareddata/*
+/SwifTodo.xcodeproj/xcuserdata/*
+/SwifTodo.xcworkspace/*
